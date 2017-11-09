@@ -404,8 +404,7 @@ In addition to that fundamental advice, this section also covers the following t
 [[spring-style-guide-spelling]]
 === Spelling
 
-With apologies to Her Majesty and the nations of the British Commonwealth, Spring's
-documentation standard uses American spelling, including the following:
+Spring's documentation standard uses American spelling, including the following details:
 
 * Words ending in "or" (such as "behavior") do not have a "u" between the "o" and the "r".
 * "Magic" does not have a "k".
