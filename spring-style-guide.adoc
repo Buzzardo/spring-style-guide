@@ -157,8 +157,9 @@ bulleted list:
 In a list, you should generally capitalize the first letter of the first word in each list
 item. If you use a separator (such as the colons in the preceding example), you should
 generally capitalize the first letter of the first word after the separator. However, if
-the word in question must be a literal of some sort. For example, if your list item starts
-with a snippet of code, you should not change the code's capitalization. (See
+the word in question must be a literal of some sort, capitalize the lteral as you would in
+its natural context. For example, if your list item starts with a snippet of code, you
+should not change the code's capitalization. (See
 <<spring-style-guide-source-code-listings>>.)
 
 TIP: One good reason to use a list is to reduce extra wording around the list items
@@ -337,8 +338,8 @@ Similarly, using short phrases (such as "As shown earlier") or sentence adverbs 
 between the content of the paragraphs and encourages the reader to continue.
 
 In short, you should try to show the relationships between pieces of content, even at the
-paragraph level, Often, it is easy to overuse the technique, but it is worthwhile to keep
-in your writing toolbox.
+paragraph level, Often, it is easy to overuse the technique, but it is worthwhile
+technique to keep in your writing toolbox.
 
 [[spring-style-guide-writing-sentences]]
 == Writing Sentences
@@ -357,9 +358,9 @@ parentheses or otherwise. Put the parenthetical content in its own sentence. Not
 parenthetical phrases are often set apart with commas.
 
 Avoid semi-colons. Used properly, a semi-colon links two independent clauses. That is, the
-words on each side of a semi-colon can each be a sentence. In those cases, you should use
-two shorter sentences, perhaps with an introductory phrase or sentence adverb at the start
-of the second sentence.
+words on each side of a semi-colon can themselves be a sentence. In those cases, you
+should use two shorter sentences, perhaps with an introductory phrase or sentence adverb
+at the start of the second sentence.
 
 Avoid dashes. In almost every case where you can use a dash, there is another punctuation
 mark you should use instead. Creating a parenthetical phrase? Use commas (if the sentence
@@ -373,13 +374,13 @@ Except when serving as separators in lists, a colon must be preceded by an indep
 clause. In other words, the part before the colon must be able to be a sentence if you
 replace the colon with a period. Specifically, do not write, "For example:".
 
-Put conditional phrases first. Consider the following sentence: "You can use the new
+Put conditional phrases first. Consider the following sentence: "You can use the `new`
 keyword if you want to make a new instance of a class." The trouble with it is that
 someone has to read all of it to determine whether its content is relevant to their
 situation. By putting the conditional part of the sentence first, you can help readers
 through the document more quickly by letting them identify whether they care about the
 second half of the sentence. To that end, the sentence should be re-written as follows:
-"To make a new instance of a class, use the new keyword."
+"To make a new instance of a class, use the `new` keyword."
 
 Also, note that the second sentence is shorter. "If you want" and "You can" were
 unnecessary (in either version). Trimming out unnecessary words offers another good way to
@@ -442,7 +443,9 @@ documentation avoids both problems. Remember that people from many cultures read
 documentation and that some people are more disturbed by violence than others.
 
 NOTE: Using "end," "run,", and "stop" is good for two other reasons: Doing so reduces the
-number of Latin cognates in the document, relying on plain English words. Second, if
+number of Latin cognates in the document, relying on plain English words. Relying on words
+that have not been borrowed from other languages simplifies the document and improves
+understanding, especially for readers whose first language is not English. Second, if
 someone translates the documentation, the plain English words are easier to correctly
 translate. Translators often do not have programming backgrounds and are more likely to
 mis-translate more complicated terms.
@@ -453,10 +456,10 @@ link the two parts of the process. The correct sentence is: "Put on your socks a
 your shoes." Note the addition of a conjunction: "and."
 
 "if...then...":: You can nearly always drop "then" in a sentence that contains an
-"if...then..." clause. In English, as in Java, "then" is implied, and the meaning remains
-clear without it. Consider the following sentence: "If you are going to the store, then
-pick up some milk." Without losing meaning, it can be rewritten as "If you are going to
-the store, pick up some milk."
+"if...then..." clause. In English, as in Java, "then" is implied, and the meaning usually
+remains clear without it. Consider the following sentence: "If you are going to the store,
+then pick up some milk." Without losing meaning, it can be rewritten as "If you are going
+to the store, pick up some milk."
 
 "will" and the future tense:: Avoid the future tense (often created by the insertion of
 "will"). Usually, the rest of the document is in the present tense. For consistency's
