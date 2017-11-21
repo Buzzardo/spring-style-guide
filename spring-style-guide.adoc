@@ -1,6 +1,7 @@
 [[spring-style-guide]]
 = Spring Style Guide
 :icons: font
+:caption:
 
 This document is for authors of Spring documentation. It describes when and how to use the
 various document elements (headings, tables, lists, and so on) and describes best
@@ -34,16 +35,16 @@ This style guide covers the following topics:
 == The Goal and the Audience
 
 When writing about Spring, remember that the goal is to get information from the document
-into the reader's head. Very few people read technical documentation for fun or are going
-to admire the quality of your prose, no matter how good it is. However, if you can quickly
+into the reader's head. Few people read technical documentation for fun or are going to
+admire the quality of your prose, no matter how good it is. However, if you can quickly
 teach them useful things, they are likely to think the documentation is wonderful.
 
 Also, remember that people with a wide range of backgrounds and abilities use Spring.
 People with doctoral degrees in Computer Science and high school kids who want to join the
 profession both use Spring, and we need to think of them and everyone in between when we
 write about Spring. We also have readers from all over the world, and English is not the
-first language for many of them. They may be very good with English, but it is never quite
-the same as one's native language.
+first language for many of them. They may be good with English, but it is never quite the
+same as one's native language.
 
 To serve all those different people well, one crucial bit of advice is to keep things
 simple. Prefer shorter sentences to longer sentences and shorter words to longer words.
@@ -71,13 +72,8 @@ paragraph of this document offers an example.
 You should generally use title case, which means capitalizing the first letter of all
 significant words (all words that are not articles, conjunctions, or prepositions).
 
-You can put code in a title, as follows:
-
-[source]
- === Using the `whatever()` Method
-
-When you use code in a title, capitalize the code element as you would in the actual code.
-(See <<spring-style-guide-source-code-listings>>.)
+You can put code in a title. When you use code in a title, capitalize the code element as
+you would in the actual code. (See <<spring-style-guide-source-code-listings>>.)
 
 Spring technical documents do not use subtitles.
 
@@ -108,7 +104,7 @@ be avoided in small documents.
 Level-1 headings often contain content that could reasonably be a document in its
 own right. The same is sometimes true of level-2 headings. Level-3 and level-4 headings
 should not contain content so significant that it could be its own document. If you find
-that your level-3 (or, worse, level-4 headings) can reasonably be documents on their own,
+that your level-3 (or, worse, level-4) headings can reasonably be documents on their own,
 you should consider restructuring the document. It may benefit from being split into
 multiple chapters or other documents.
 
@@ -154,13 +150,12 @@ bulleted list:
 * Purple: Red and blue.
 * Orange: Red and yellow.
 
-In a list, you should generally capitalize the first letter of the first word in each list
-item. If you use a separator (such as the colons in the preceding example), you should
-generally capitalize the first letter of the first word after the separator. However, if
-the word in question must be a literal of some sort, capitalize the lteral as you would in
-its natural context. For example, if your list item starts with a snippet of code, you
-should not change the code's capitalization. (See
-<<spring-style-guide-source-code-listings>>.)
+In a list, you should capitalize the first letter of the first word in each list item. If
+you use a separator (such as the colons in the preceding example), you should generally
+capitalize the first letter of the first word after the separator. However, if the word in
+question must be a literal of some sort, capitalize the literal as you would in its
+natural context. For example, if your list item starts with a snippet of code, you should
+not change the code's capitalization. (See <<spring-style-guide-source-code-listings>>.)
 
 TIP: One good reason to use a list is to reduce extra wording around the list items
 (by removing any introductory bits within each list item). A well written list can help
@@ -184,6 +179,9 @@ error rates for the readers and fewer support tickets for the developers.)
 
 Ordinary lists rarely get titles or their own headings. However, instructions often get
 headings.
+
+As a rule, you should avoid using bold or italics in lists. See
+<<spring-style-guide-highlighting>>.
 
 [[spring-style-guide-tables]]
 == Tables
@@ -232,13 +230,13 @@ or a heading). Block listings let you show larger sections of code so that the r
 see the code in context and more readily understand it.
 
 Usually, we do not remove lines from code to shorten listings. If you need to do so, you
-should probably have two listings, each with its own description. If you need to highlight
-certain lines within a listing, you can do so by making one or more lines bold or by using
-callouts. When you do need to use multiple listings to show something, each listing has to
-have its own explanation. Also, do not try to use part of a sentence before a listing and
-continue the rest of the sentence after the listing. That creates one or more sentence
-fragments, which violates Spring's documentation standard. Also, providing more detail can
-help to answer the reader's questions.
+should probably have two listings, each with its own descriptive leader paragraph. If you
+need to highlight certain lines within a listing, you can do so by making one or more
+lines bold or by using callouts. When you do need to use multiple listings to show
+something, each listing has to have its own explanation. Do not try to use part of a
+sentence before a listing and continue the rest of the sentence after the listing. That
+creates one or more sentence fragments, which violates Spring's documentation standard.
+Also, providing more detail can help to answer the reader's questions.
 
 IMPORTANT: When you use code inline, the code's formatting overrides any other formatting
 rules, such as capitalizing words in titles and headings. Also, you should never change
@@ -246,7 +244,7 @@ code to make a word be plural. For example, if you were describing a set of `Ite
 objects, it would be an error to write " `Items` " or " `Item` s ". Instead, you should
 write " `Item` objects ". (Sometimes, the correct word is "implementations" or "instances"
 rather than "objects".) In short, you should never indicate that something is source code
-unless it can be found in the code base _exactly_ as it appears in the document.
+unless it can be found in the code base exactly as it appears in the document.
 
 [[spring-style-guide-links]]
 == Links and Anchors
@@ -338,7 +336,7 @@ Similarly, using short phrases (such as "As shown earlier") or sentence adverbs 
 between the content of the paragraphs and encourages the reader to continue.
 
 In short, you should try to show the relationships between pieces of content, even at the
-paragraph level, Often, it is easy to overuse the technique, but it is worthwhile
+paragraph level, Often, it is easy to overuse the technique, but it is a worthwhile
 technique to keep in your writing toolbox.
 
 [[spring-style-guide-writing-sentences]]
@@ -370,7 +368,7 @@ sentences. Making separators in a bulleted or numbered list? Use colons. Making 
 in a bulleted or numbered list whose items already have colons? That is the only use case
 for dashes.
 
-Except when serving as separators in lists, a colon must be preceded by an independent
+Except when serving as a separator in lists, a colon must be preceded by an independent
 clause. In other words, the part before the colon must be able to be a sentence if you
 replace the colon with a period. Specifically, do not write, "For example:".
 
@@ -392,12 +390,17 @@ readers.
 [[spring-style-guide-wording]]
 == Wording
 
-"Never use a fifty-cent word when a five-cent word will do." In other words, prefer simple
-words to more complex words and shorter words to longer words.
+Prefer simple words to more complex words and shorter words to longer words. To that end,
+avoiding words that English has borrowed from other languages (notably Latin) is often a
+good idea. English often has native words that mean the same thing and that are shorter
+and simpler and are more friendly to people whose first language is not English. See
+<<spring-style-guide-words-avoid>> for a few specific examples.
 
-In addition to that fundamental advice, this section also covers the following topics:
+In addition to the fundamental advice to keep things short and simple, this section also
+covers the following topics:
 
 * <<spring-style-guide-spelling>>
+* <<spring-style-guide-highlighting>>
 * <<spring-style-guide-words-avoid>>
 * <<spring-style-guide-writing-numbers>>
 
@@ -412,6 +415,25 @@ Spring's documentation standard uses American spelling, including the following 
 * Words ending in "ise" and "isation" (such as "specialise" and "specialisation") end in
 "ize" and "ization", respectively ("specialize" and "specialization").
 * And so on.
+
+
+[[spring-style-guide-highlighting]]
+=== Highlighting
+
+It can be tempting to highlight important words, often by capitalizing, underlining, or
+using bold. However, the Spring documentation standard calls for not doing so.
+Highlighting with any of those techniques makes the reader's eye jump to the highlighted
+content, breaking the flow of their reading and forcing them to re-read sentences. In
+other words, highlighting slows down reading and makes the document less friendly to our
+readers. If you must highlight something, do so sparingly.
+
+Mosts lists should also not have highlighting, other than to capitalize the first word of
+each list item and the first word after a separator within a list item. However,
+definition lists may have the word (or short phrase) being defined in bold, especially if
+the definition is on a different line than the word being defined.
+
+NOTE: Code within sentences should be highlighted by using the code font. See
+<<spring-style-guide-source-code-listings>>.
 
 
 [[spring-style-guide-words-avoid]]
@@ -479,6 +501,9 @@ Also, when referring to an example that immediately precedes the paragraph, writ
 "just":: In many cases, you can remove "just" from a sentence without changing its
 meaning. In those cases, you should remove it.
 
+"very":: "Very" can nearly always be removed without changing the meaning of the sentence.
+In those cases, you should remove it.
+
 "simply", "easily", "obviously", and so on:: Avoid these words and any other words that
 imply something is simple, easy, or obvious. For someone new to Spring, the task or issue
 at hand may not be simple, easy, or obvious. Remember to put yourself in the reader's
@@ -490,7 +515,7 @@ were simple, easy, or obvious, would they be reading the documentation?
 === Writing Numbers
 
 If a number is ten or less and is a positive integer, write it as a word. Otherwise, write
-it as a number. Specifically, you should write it as a number, rather than write it as a
+it as a number. Specifically, you should write it as a number, rather than as a
 word, when its value is less than zero or greater than ten, it contains a mathematical
 constant, or it is anything other than an integer. The following examples are all correct:
 `zero`, `one`, `two`, `ten`, `11`, `12`, `20`, `30`, `-0`, `-1`, `-2`, `-10`, `-20`,
