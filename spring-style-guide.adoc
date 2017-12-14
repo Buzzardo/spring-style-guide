@@ -437,7 +437,7 @@ NOTE: Code within sentences should be highlighted by using the code font. See
 
 
 [[spring-style-guide-words-avoid]]
-=== Words to Avoid or Avoid Misusuing
+=== Words to Avoid or Avoid Misusing
 
 "foo" and "bar":: "foo" and "bar" are often used in sample code. Doing so is a mistake for
 two reasons. First, more meaningful examples are more helpful. For example, a line of code
